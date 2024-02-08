@@ -1,0 +1,18 @@
+.slider{
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    height: auto;
+    gap: 1em;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    right: 20px;
+    top: 50vh;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(84, 84, 84, 0.4);
+}

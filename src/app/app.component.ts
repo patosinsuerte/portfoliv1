@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { PresentationComponent } from './components/presentation/presentation.component';
-import { AboutComponent } from './components/about/about.component';
-import { MyServicesComponent } from './components/my-services/my-services.component';
-import { ProyectsComponent } from './components/proyects/proyects.component';
+import { PresentationComponent } from './pages/presentation/presentation.component';
+import { AboutComponent } from './pages/about/about.component';
+import { MyServicesComponent } from './pages/my-services/my-services.component';
+import { ProyectsComponent } from './pages/proyects/proyects.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @Component({
     selector: 'app-root',
@@ -18,6 +19,8 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
         AboutComponent,
         MyServicesComponent,
         ProyectsComponent,
+        SliderComponent,
+        CommonModule,
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',

@@ -2,6 +2,8 @@
     height: auto;
     min-height: 700px;
     background-image: url("/assets/images/sin.png");
+    // background-image: url("/assets/images/rosa.jpg");
+    // background-image: url("/assets/images/piola.webp");
     // background-image: url("/assets/images/wall2.jpg");
     background-position: center;
     background-size: cover;
@@ -39,6 +41,7 @@
     letter-spacing: 2.2px;
     text-shadow: 1px 3px 11px rgba(0, 0, 0, 0.3);
     font-size: 8vw;
+    color: var(--font-main-color);
 
 }
 
@@ -48,6 +51,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
+    color: var(--font-main-color);
 }
 
 /**DESCRIPTION*/
@@ -64,7 +68,9 @@
     line-height: 2;
     text-align: center;
     color: var(--font-secondary-color-test);
+    color: var(--font-main-color);
     font-size: 1.1rem;
+
 
 }
 

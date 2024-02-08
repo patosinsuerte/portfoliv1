@@ -1,6 +1,6 @@
 .box{
     height: auto;
-    min-height: 700px;
+    min-height: 750px;
     max-width: 100%;
     padding: 1em;
     // background-image: url("/assets/images/super3.png");
@@ -44,7 +44,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     padding-bottom: 0.2em;
-    border-bottom: #af210a solid 0.3px;
+    border-bottom: var(--secondary-color) solid 0.3px;
 }
 
 
@@ -55,6 +55,7 @@
     gap: 2em;
     max-width: 600px;
 
+
 }
 
 
@@ -64,8 +65,9 @@
 .information__titles {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    gap: 0.5em;
     padding: 1em;
+
 
 }
 
@@ -73,10 +75,14 @@
     font-size: 2rem;
     color: var(--font-primary-color);
     text-align: left;
+
 }
 
 
-
+.information__title--orange{
+    color: #bd2805;
+    color: var(--secondary-color);
+}
 
 
 

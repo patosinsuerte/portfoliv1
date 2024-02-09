@@ -1,6 +1,46 @@
 <div class="slider">
-    <a href="#presentation"><div class="circle"></div></a>
-    <a href="#about"><div class="circle"></div></a>
-    <a href="#services"><div class="circle"></div></a>
-    <a href="#proyects"><div class="circle"></div></a>
+    <a href="#presentation" (click)="setPresentationIndex()">
+        <div
+            class="circle"
+            [ngClass]="activeIndex === 0 ? 'active' : 'inactive'"
+        >
+            <img
+                src="./assets/icons/home.svg"
+                alt=""
+                class="circle__img"
+            /></div
+    ></a>
+    <a href="#about" (click)="setAboutIndex()"
+        ><div
+            class="circle"
+            [ngClass]="activeIndex === 1 ? 'active' : 'inactive'"
+        >
+            <img
+                src="./assets/icons/user.svg"
+                alt=""
+                class="circle__img"
+            /></div
+    ></a>
+    <a href="#services" (click)="setServiceIndex()"
+        ><div
+            class="circle"
+            [ngClass]="activeIndex === 2 ? 'active' : 'inactive'"
+        >
+            <img
+                src="./assets/icons/briefcase.svg"
+                alt=""
+                class="circle__img"
+            /></div
+    ></a>
+    <a href="#proyects" (click)="setProyectsIndex()"
+        ><div
+            class="circle"
+            [ngClass]="activeIndex === 3 ? 'active' : 'inactive'"
+        >
+            <img
+                src="./assets/icons/book.svg"
+                alt=""
+                class="circle__img"
+            /></div
+    ></a>
 </div>

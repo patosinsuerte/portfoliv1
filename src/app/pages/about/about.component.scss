@@ -52,10 +52,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 2em;
+    gap: 1em;
     max-width: 600px;
-
-
 }
 
 
@@ -96,10 +94,11 @@
 
 /**INFORMATION DESCRIPTION*/
 .information__description {
-
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     border-radius: 10px;
     padding: 1em;
-
 }
 
 .information__description-text {

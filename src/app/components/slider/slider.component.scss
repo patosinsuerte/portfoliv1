@@ -11,8 +11,37 @@
     top: 50vh;
 }
 .circle{
-    width: 10px;
-    height: 10px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: rgb(84, 84, 84, 0.4);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// .circle.active {
+//     background-color: rgb(223, 57, 0, 0.7);
+//     /* Otros estilos para el círculo activo */
+// }
+
+.circle.incactive {
+    background-color: rgb(84, 84, 84, 0.4);
+    /* Otros estilos para el círculo activo */
+}
+
+
+
+.circle:hover{
+    background-color: rgb(223, 57, 0, 0.7);
+
+}
+
+
+.circle__img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
 }

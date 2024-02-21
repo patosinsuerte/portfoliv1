@@ -1,29 +1,36 @@
-<header class="header">
+<header [ngClass]="isActive ? 'header--active' : 'header'">
     <div class="header__logo">
-        <a href="#" class="header__logo-link">PA</a>
+        <a href="#" class="header__logo-link"></a>
     </div>
-    <button class="header__hamburguer">
+    <button class="header__hamburguer" (click)="activeMenu()">
         <img
             src="../assets/icons/menu.svg"
             alt="Menu"
             class="header__hamburguer-img"
-            (click)="toggleMenu()"
         />
     </button>
-    <!--class="main-nav"-->
-    <nav [ngClass]="{ 'main-nav--active': isActive, 'main-nav': !isActive }">
+    <nav [ngClass]="isActive ? 'main-nav--active' : 'main-nav'">
         <ul class="main-menu">
             <li class="main-menu__item">
-                <a class="main-menu__link text-color" href="#">About me</a>
+                <a class="main-menu__link text-color" href="#home">Home</a>
             </li>
             <li class="main-menu__item">
-                <a class="main-menu__link text-color" href="#">Skills</a>
+                <a class="main-menu__link text-color" href="#about">About me</a>
             </li>
             <li class="main-menu__item">
-                <a class="main-menu__link text-color" href="#">Proyects</a>
+                <a class="main-menu__link text-color" href="#services"
+                    >Services</a
+                >
             </li>
             <li class="main-menu__item">
-                <a class="main-menu__link text-color" href="#">Contact</a>
+                <a class="main-menu__link text-color" href="#proyects"
+                    >Proyects</a
+                >
+            </li>
+            <li class="main-menu__item">
+                <a class="main-menu__link text-color" href="#contact"
+                    >Contact</a
+                >
             </li>
         </ul>
     </nav>

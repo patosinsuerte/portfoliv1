@@ -9,23 +9,23 @@ import { Component, HostListener } from '@angular/core';
     styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-    isActive: boolean = false;
+    public isActive: boolean = false;
 
-    toggleMenu() {
+    constructor() {
+        this.checkScreenSize();
+
+        window.addEventListener('resize', () => this.checkScreenSize());
+    }
+
+    activeMenu() {
         this.isActive = !this.isActive;
     }
 
-    // Escucha el evento de cambio de tamaño de la pantalla
-    @HostListener('window:resize', ['$event'])
-    onResize(event: any) {
-        // Obtén el ancho de la ventana
-        const screenWidth = event.target.innerWidth;
+    private checkScreenSize() {
+        const screenWidth = window.innerWidth;
 
-        // Cambia la propiedad isActive según el ancho de la pantalla
-        if (screenWidth <= 530) {
+        if (screenWidth >= 500) {
             this.isActive = false;
-        } else {
-            this.isActive = true;
         }
     }
 }
